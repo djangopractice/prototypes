@@ -54,3 +54,6 @@ docs/_build/
 
 #Vagrant
 .vagrant
+
+#swp file
+*.swp
