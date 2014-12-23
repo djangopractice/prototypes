@@ -1,28 +1,30 @@
-{% load webdesign %}
-<div class="jumbotron">
-    <div class="container">
-        <h1>Welcome To The Site</h1>
-        <p>Insert marketing copy here</p>
-    </div>
-</div>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2>About</h2>
-            <p>{% lorem %}</p>
+            <form class="form-signup" role="form">
+            <h2>Contact Us</h2>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email address" required="" />
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Title" required="" />
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" required="" placeholder="Your message..."></textarea>
+            </div>
+            <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </div>
+            </form>
         </div>
-        <div class="col-md-6">
-            <h2>Contact</h2>
-            <p>{% lorem %}</p>
-            <p>
-                <a class="btn btn-default" href="/contact/" role="button">Contact us</a>
-            </p>
+        <div class="col-md-4 col-md-offset-2">
+            <h2>Our Office</h2>
+            <address>
+                <strong>Company Name</strong><br />
+                123 Somewhere St<br />
+                Phoenix, AZ 85000<br />
+                (602) 555-1234
+            </address>
         </div>
     </div>
 </div>
-<hr>
-<footer>
-    <div class="container">
-        <p>&copy; My Company {% now 'Y' %}</p>
-    </div>
-</footer>
